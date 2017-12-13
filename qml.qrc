@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cutter.svg</file>
+        <file>images/attention.svg</file>
+        <file>images/videocam.svg</file>
+        <file>images/computer.svg</file>
+        <file>images/power.svg</file>
+        <file>images/monitor.svg</file>
+        <file>images/nuclear.svg</file>
+        <file>images/settings.svg</file>
+        <file>qml/main.qml</file>
+        <file>qml/MyText.qml</file>
+        <file>qml/MyPanel.qml</file>
+        <file>qml/MyIconButton.qml</file>
+        <file>qml/MyButton.qml</file>
+        <file>qml/SettingsWindow.qml</file>
+        <file>qml/MyComboBox.qml</file>
+        <file>qml/MyTextField.qml</file>
+        <file>qml/InputSourceTile.qml</file>
+        <file>qml/OutputTile.qml</file>
+    </qresource>
+</RCC>
