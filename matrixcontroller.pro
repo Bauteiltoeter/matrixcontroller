@@ -5,7 +5,9 @@ CONFIG += c++11
 
 SOURCES += src/main.cpp \
     src/inputsource.cpp \
-    src/routingcontroller.cpp
+    src/routingcontroller.cpp \
+    src/outputsink.cpp \
+    src/routenmanager.cpp
 
 RESOURCES += qml.qrc
 
@@ -33,4 +35,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     src/inputsource.h \
-    src/routingcontroller.h
+    src/routingcontroller.h \
+    src/outputsink.h \
+    src/routenmanager.h

@@ -28,6 +28,7 @@ Window {
 
         color: customColor.background
 
+
         MyIconButton {
             anchors.top: parent.top
             anchors.right: parent.right
@@ -109,18 +110,13 @@ Window {
 
     Grid {
         id: outputRow
+        objectName: "outputRow"
         anchors.top: inputRow.bottom
         anchors.topMargin: 150
         rows: 1
         spacing: 1
 
-        Repeater {
-            model: 16
 
-            OutputTile {
-
-            }
-        }
     }
 
 

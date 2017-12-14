@@ -1,6 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>images/cutter.svg</file>
+        <file>images/dvi.svg</file>
+        <file>images/beamer.svg</file>
+        <file>images/recorder.svg</file>
         <file>images/attention.svg</file>
         <file>images/videocam.svg</file>
         <file>images/computer.svg</file>

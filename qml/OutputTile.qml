@@ -1,7 +1,11 @@
 import QtQuick 2.0
 
 DropArea {
-    property string name: "Output 1"
+    property string label;
+    property string icon: "videocam.svg";
+    property int inputNumber: -1;
+
+    signal inputDropped;
 
     id: dragTarget
 
@@ -11,7 +15,7 @@ DropArea {
     keys: [ "inputTile" ]
 
     onDropped: {
-        console.log("Something dropped");
+        inputDropped();
     }
 
     MyPanel {
@@ -26,7 +30,7 @@ DropArea {
             anchors.bottomMargin: 5
             anchors.topMargin: 5
             smooth: true
-            source: "../images/monitor.svg"
+            source: "../images/" + icon
             fillMode: Image.PreserveAspectFit
         }
 
@@ -38,7 +42,7 @@ DropArea {
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 5
             fontSize: 10
-            text: dragTarget.name
+            text: dragTarget.label
         }
 
         states: [

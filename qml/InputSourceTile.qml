@@ -1,10 +1,13 @@
 import QtQuick 2.0
+ import QtQuick.Controls 2.0
 
 Item {
     property string label;
     property string icon: "videocam.svg";
     property int inputNumber: -1;
     id: root
+
+    signal draged;
 
     width: 90; height: 90
 
@@ -15,6 +18,10 @@ Item {
         anchors.centerIn: parent
 
         drag.target: tile
+
+        onPressed: {
+            draged();
+        }
 
         onReleased:{
             tile.Drag.drop();
