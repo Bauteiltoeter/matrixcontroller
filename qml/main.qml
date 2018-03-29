@@ -3,7 +3,7 @@ import QtQuick.Window 2.2
 
 Window {
     visible: true
-    width: 91*16
+    width: 91*18
     height: 480
     title: qsTr("Video matrix controller")
 

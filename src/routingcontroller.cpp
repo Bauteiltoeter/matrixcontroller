@@ -5,7 +5,7 @@ RoutingController::RoutingController(QObject *parent) : QObject(parent)
 {
     lastDraggedInput = -1;
 
-    for(int i=0; i< 16; i++)
+    for(int i=0; i< 18; i++)
     {
         inputSourcen[i].setInput_number(i+1);
         inputSourcen[i].setName("");
@@ -46,13 +46,13 @@ void RoutingController::setEngine(QQmlApplicationEngine *value)
 
 
     QQuickItem* myInputGrid = engine->rootObjects().at(0)->findChild<QQuickItem *>("inputRow");
-    for(int i=0; i< 16; i++)
+    for(int i=0; i< 18; i++)
     {
         inputSourcen[i].attachGUI(engine, myInputGrid);
     }
 
     QQuickItem* myOutputGrid = engine->rootObjects().at(0)->findChild<QQuickItem *>("outputRow");
-    for(int i=0; i< 16; i++)
+    for(int i=0; i< 18; i++)
     {
         outputSinks[i].attachGUI(engine, myOutputGrid);
     }
@@ -60,7 +60,7 @@ void RoutingController::setEngine(QQmlApplicationEngine *value)
 
 void RoutingController::inputDropped(int outputId)
 {
-    if(lastDraggedInput>0 && lastDraggedInput<=16 && outputId > 0 && outputId <= 16 )
+    if(lastDraggedInput>0 && lastDraggedInput<=18 && outputId > 0 && outputId <= 18 )
     {
 
         qDebug() << "Routing input " << inputSourcen[lastDraggedInput-1].getLabel() << " to output " << outputSinks[outputId-1].getLabel();

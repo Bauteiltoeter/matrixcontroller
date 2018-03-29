@@ -29,6 +29,7 @@ void RoutenManager::addRoute(int inputId, int outputId)
     }
     else
     {
+        qDebug() << "Found old route, deleting it and creating a new one!";
         deleteRoute(oldRoute, outputId);
         routen[inputId-1].append(outputId);
     }

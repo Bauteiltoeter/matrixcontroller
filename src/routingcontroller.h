@@ -22,8 +22,8 @@ private slots:
     void inputDraged(int inputId);
 
 private:
-    InputSource inputSourcen[16];
-    OutputSink  outputSinks[16];
+    InputSource inputSourcen[18];
+    OutputSink  outputSinks[18];
     QQmlApplicationEngine* engine;
     int lastDraggedInput;
     RoutenManager routenManager;
